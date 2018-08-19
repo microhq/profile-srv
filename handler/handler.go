@@ -3,8 +3,8 @@ package handler
 import (
 	"golang.org/x/net/context"
 
-	"github.com/micro/profile-srv/db"
-	"github.com/micro/profile-srv/proto/record"
+	"github.com/microhq/profile-srv/db"
+	"github.com/microhq/profile-srv/proto/record"
 )
 
 type Record struct{}
