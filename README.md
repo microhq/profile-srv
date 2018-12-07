@@ -52,7 +52,11 @@ micro call go.micro.srv.profile Record.Create '{
 		"url": "http://example.com", 
 		"location": "london"
 	}
-}' '{}'
+}'
+```
+Response:
+```shell
+{}
 ```
 
 ### Record.Search
