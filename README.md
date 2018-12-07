@@ -41,7 +41,7 @@ Record
 
 ### Record.Create
 ```shell
-micro query go.micro.srv.profile Record.Create '{
+micro call go.micro.srv.profile Record.Create '{
 	"profile": {
 		"id": "1", 
 		"name": "john", 
@@ -52,13 +52,15 @@ micro query go.micro.srv.profile Record.Create '{
 		"url": "http://example.com", 
 		"location": "london"
 	}
-}' 
-{}
+}' '{}'
 ```
 
 ### Record.Search
 ```shell
-micro query go.micro.srv.profile Record.Search '{"limit": 10}'
+micro call go.micro.srv.profile Record.Search '{"limit": 10}'
+```
+Response:
+```shell
 {
 	"profiles": [
 		{
